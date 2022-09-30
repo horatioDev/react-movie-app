@@ -3,9 +3,9 @@ import MovieCard from './components/MovieCard'
 import Search from './components/Search'
 import './App.css'
 
-// OMDB API Key
-const API_KEY = '460437bb'
-const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&`
+// OMDB API URL
+// Hid api key .env file for Netlify deployment
+const API_URL = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&`
 
 const App = ({ title }) => { 
     
